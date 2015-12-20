@@ -23,7 +23,6 @@ describe 'file-overlap', ->
     context 'neither a nor b', ->
       Then -> @subject.overlap().should.eql ''
       
-      
   describe '.difference', ->
     context 'absolute path and file', ->
       Then -> @subject.difference('/foo/bar/baz', 'bar/baz/banana.js').should.eql '/foo'
