@@ -20,12 +20,18 @@ Get the overlapping part of two file paths
 
 `.differenceRight` returns the path that the second argument has the the first doesn't.
 
+`.tail` returns the difference at the end of the first argument when compared to b.
+
 ```
 var overlap = require('file-overlap');
 
 console.log( overlap.overlap('/foo/bar/baz', 'bar/baz/banana.js') ); // 'bar/baz'
 console.log( overlap.difference('/foo/bar/baz', 'bar/baz/banana.js') ); // '/foo'
 console.log( overlap.differenceRight('/foo/bar/baz', 'bar/baz/banana.js') ); // 'banana.js'
+console.log( overlap.tail('/foo/bar/baz/banana.js', '/foo/bar/baz') ); // 'banana.js'
+
+// N.B. Tail does not work in reverse (right now).
+console.log( overlap.tail('/foo/bar/baz', '/foo/bar/baz/banana.js') ); // '/foo/bar/baz' <- obviously not correct
 ```
 
 ### Browser
