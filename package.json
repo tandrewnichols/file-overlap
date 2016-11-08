@@ -1,7 +1,7 @@
 {
   "name": "file-overlap",
   "description": "Get the overlapping part of two file paths",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "lib/file-overlap.js",
   "scripts": {
     "test": "gulp"
