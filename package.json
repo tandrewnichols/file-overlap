@@ -39,7 +39,7 @@
     "gulp": "^3.9.0",
     "gulp-cli": "^1.2.2",
     "gulp-codeclimate-reporter": "^1.2.0",
-    "gulp-copy": "1.0.0",
+    "gulp-copy": "1.0.1",
     "gulp-debug": "^3.0.0",
     "gulp-eslint": "^3.0.1",
     "gulp-istanbul": "^1.1.1",
